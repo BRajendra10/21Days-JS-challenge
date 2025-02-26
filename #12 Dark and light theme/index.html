@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and light theme buttton</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css" integrity="sha512-hH7VMMVfPgfkpYx2GazOEG6RrYM+y8cS7FzccwBTWQeyhPv01XYk0MVcuhh4EAimOELWvqKjhNwes/UsYoyN6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        button{
+            border: none;
+            border-radius: 30px;
+            padding: 5px 70px 5px 5px;
+            background-color: #e6e6e6;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        button .circle{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+        }
+        #sun{
+            color: gold;
+            font-size: 20px;
+        }
+        #moon{
+            display: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button id="button">
+        <div class="circle">
+            <i class="ri-sun-fill" id="sun"></i>
+            <i class="ri-moon-fill" id="moon"></i>
+        </div>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
