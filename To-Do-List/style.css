@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:darkcyan;
+}
+.todo-list-container{
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 0px 10px gray;
+    border-radius: 8px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+}
+.todo-list{
+    width: 100%;
+    height: 100%;
+}
+.todo-list h3{
+    font-size: 20px;
+    color: #12256B;
+    margin-bottom: 20px;
+}
+.todo-list h3 i{
+    color: #FF5845;
+}
+.todo-list .input-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.input-field input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+    font-weight: 14px;
+}
+.input-field button{
+    border: none;
+    outline: none;
+    padding: 13px 40px;
+    border-radius: 30px;
+    background-color: #FF5845;
+    color: white;
+    font-size: 15px;
+}
+.task-list .task-item{
+    font-size: 17px;
+    padding: 12px 8px 12px 40px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+.task-list .task-item span{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.task-list .task-item::before{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url('./assets/unchecked.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.task-list .checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.task-list .checked::before{
+    background-image: url('./assets/check.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.task-list .task-item span{
+    font-size: 18px;
+}
