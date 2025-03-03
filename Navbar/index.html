@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with dropdown</title>
+
+    <!-- css file linked -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- remix cdn linked -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css" integrity="sha512-hH7VMMVfPgfkpYx2GazOEG6RrYM+y8cS7FzccwBTWQeyhPv01XYk0MVcuhh4EAimOELWvqKjhNwes/UsYoyN6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar-container">
+        <div class="navbar">
+            <div class="logo">
+                <span>Logo.</span>
+            </div>
+
+            <button class="navbar-toogler nav-btn btn">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-list">
+                    <a href="#" class="nav-item">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-item">About</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-item">Projects</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-item">Blog</a>
+                </li>
+                <li class="nav-list dropdown">
+                    <a href="#" class="nav-item">Dropdown</a>
+
+                    <!-- Navbar dropdown menu -->
+                    <ul class="dropdown-menu nav-dropdown">
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 1</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 2</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 3</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 4</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal content -->
+    <section class="menu-modal modal">
+        <div class="modal-header">
+            <span class="heading">menu</span>
+            <button class="btn-close btn">
+                <i class="ri-close-large-fill"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ul class="modal-menu">
+                <li class="modal-list">
+                    <a href="#" class="modal-item">Home</a>
+                </li>
+                <li class="modal-list">
+                    <a href="#" class="modal-item">About</a>
+                </li>
+                <li class="modal-list">
+                    <a href="#" class="modal-item">Projects</a>
+                </li>
+                <li class="modal-list">
+                    <a href="#" class="modal-item">Blog</a>
+                </li>
+                <li class="modal-list dropdown">
+                    <a href="#" class="modal-item">Dropdown</a>
+
+                    <!-- Modal menu dropdown -->
+                    <ul class="dropdown-menu modal-dropdown">
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 1</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 2</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 3</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 4</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="dropdown-item">Dropdown 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="modal-list">
+                    <a href="#" class="modal-item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
